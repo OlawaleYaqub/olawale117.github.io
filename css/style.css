@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --sans: sans-serif;
+    --green: #00a884;
+    --grey: #8696a0;
+    --black: #0b141a;
+}
+
+body {
+    background-color: #111b21;
+    padding: 0;
+    margin: 0;
+    font-family: var(--sans);
+}
+
+@media(min-width: 350px) {
+    img.display-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    ul.nav {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3rem;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+
+    li [class *="nav-icon"] {
+        color: white;
+        font-size: 1rem;
+    }
+
+    p.nav-para {
+        font-family: var(--sans);
+        font-size: 1.1rem;
+        line-height: 14px;
+        color: white;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    p.nav-para.two {
+        color: var(--grey);
+    }
+
+    /* The Message, audio and video bar */
+    ul.msg-icon {
+        display: flex;
+        gap: 3.4rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        padding-right: 2rem;
+    }
+
+    span.msg-aud-vid {
+        color: var(--green);
+        font-size: 23px;
+    }
+
+    p.msg-aud-vid {
+        color: var(--green);
+        text-align: center;
+    }
+
+    ul.msg-aud-vid2 {
+        display: flex;
+        gap: 1.3rem;
+        justify-content: center;
+        align-items: center;
+        padding-right: 3rem;
+        color: var(--green);
+    }
+
+    ul.msg-aud-vid:last-child {
+        padding-left: 3.0rem;
+    }
+
+    /* All the best section styling */
+    div.all-the-best {
+        border-top: 1.2rem solid var(--black);
+        color: white;
+        font-family: inherit;
+        padding-left: 1rem;
+        line-height: 1.5rem;
+        border-bottom: 1.2rem solid var(--black);
+    }
+
+    .all-the-best span {
+        color: var(--grey);
+    }
+
+    /* The Media section */
+    p.media {
+        color: var(--grey);
+        font-family: inherit;
+        padding-left: 1rem;
+    }
+
+    p.media span {
+        padding-left: 9.5rem;
+    }
+
+    ul.images-shared {
+        display: flex;
+        gap: 9px;
+        border-bottom: 1.2rem solid var(--black);
+
+    }
+
+    img.shared-media {
+        height: 100px;
+        width: 100px;
+        border-radius: 10%;
+    }
+
+    /* Mute Notifications section */
+    ul.mute-notifications {
+        display: flex;
+        gap: 2rem;
+    }
+
+    div.mut-notifi {
+        padding-left: 1.5rem;
+        border-bottom: 1.2rem solid var(--black);
+    }
+
+    p.mute-notifi-text span {
+        color: white;
+    }
+
+    i.mut-icon {
+        color: var(--grey);
+        font-size: 1.3rem;
+    }
+}
